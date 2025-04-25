@@ -30,15 +30,6 @@ function Home() {
   const [mysteryTV, setMysteryTV] = useState<any[]>([])
   const [crimeTV, setCrimeTV] = useState<any[]>([])
 
-  const [popularContent, setPopularContent] = useState<{ type: string; id: number; title: string; overview: string; poster_path: string; release_date: string; popularity: number; }[]>([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      setPopularContent(await getPopularContent())
-    }
-    fetchData()
-  }, [])
-
   useEffect(() => {
     async function fetchData() {
       setPopular(await getPopularMovies())
