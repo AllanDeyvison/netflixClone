@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieRow from "../components/movieRows/MovieRow";
-import { getLatestMovies, getMoviesByGenres, getPopularContent, getPopularMovies, getPopularTVShows, getTVShowsByGenre } from "../services/tmdb";
+import { getLatestMovies, getMoviesByGenres, getPopularMovies, getPopularTVShows, getTVShowsByGenre } from "../services/tmdb";
 
 function Home() {
   const [popular, setPopular] = useState<any[]>([])
