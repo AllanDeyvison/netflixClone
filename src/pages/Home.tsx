@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieRow from "../components/movieRows/MovieRow";
 import { getLatestMovies, getMoviesByGenres, getPopularContent, getPopularMovies, getPopularTVShows, getTVShowsByGenre } from "../services/tmdb";
-import Row from "../components/movieRows/Row";
-import Carousel from "../components/Carousel/Carousel";
 
 function Home() {
   const [popular, setPopular] = useState<any[]>([])
@@ -77,10 +75,6 @@ function Home() {
   return (
     <>
      <div className="p-4">
-
-     <div className="pt-20 px-6">
-     <Carousel items={popularContent} />
-    </div>
 
       <MovieRow title="Populares" movies={popular} />
       <MovieRow title="Populares na TV" movies={popularTV} />

@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { use, useRef } from "react";
+import { useRef } from "react";
 
 type Props = {
     title: string;
